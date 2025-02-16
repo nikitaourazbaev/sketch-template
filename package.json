@@ -1,0 +1,34 @@
+{
+  "name": "pen-template",
+  "version": "1.0.0",
+  "description": "Template for quick local code sketches with Alpine.js and TailwindCSS",
+  "main": "index.js",
+  "author": "nikitaourazbaev",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf dist/*.{build.js,css}",
+    "dev:css": "tailwindcss -i ./src/base.css -o ./dist/base.css --watch",
+    "dev:js": "node build-js --watch",
+    "dev:serve": "browser-sync start -s -f . --no-notify --host $LOCAL_IP --port 9000",
+    "dev": "npm run clean && npm-run-all --parallel dev:*"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "browser-sync": "^3.0.3",
+    "esbuild": "^0.25.0",
+    "eslint": "^9.20.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.5.1",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "3"
+  },
+  "dependencies": {
+    "@alpinejs/collapse": "^3.14.8",
+    "@alpinejs/focus": "^3.14.8",
+    "@alpinejs/intersect": "^3.14.8",
+    "@alpinejs/morph": "^3.14.8",
+    "alpinejs": "^3.14.8"
+  }
+}

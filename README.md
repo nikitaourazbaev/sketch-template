@@ -1,0 +1,1 @@
+A template for quick local prototypes, demos and sandboxes with [Alpine.js](https://github.com/alpinejs/alpine) and [TailwindCSS (v3](https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.4.17).
