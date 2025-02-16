@@ -2,7 +2,6 @@
   "name": "pen-template",
   "version": "1.0.0",
   "description": "Template for quick local code sketches with Alpine.js and TailwindCSS",
-  "main": "index.js",
   "author": "nikitaourazbaev",
   "license": "MIT",
   "type": "module",
