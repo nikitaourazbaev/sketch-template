@@ -6,7 +6,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "clean": "rimraf dist/*.{build.js,css}",
+    "clean": "rimraf dist/*.{bundle.js,css}",
     "dev:css": "tailwindcss -i ./src/base.css -o ./dist/base.css --watch",
     "dev:js": "node build-js --watch",
     "dev:serve": "browser-sync start -s -f . --no-notify --host $LOCAL_IP --port 9000",
